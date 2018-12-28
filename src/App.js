@@ -3,6 +3,9 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import React, { Component } from 'react';
 import theme from './themes/defaultTheme';
 
+const open=theme=>({
+})
+
 class App extends Component {
   state={
     open:false
@@ -16,7 +19,7 @@ class App extends Component {
     return (
       <MuiThemeProvider theme={theme}>
         <AppBar position='sticky'>
-          <Toolbar style={{display:'flex'}}>
+          <Toolbar style={{display:'flex'}} >
             <Typography variant='h6' color='inherit' aria-label='App Bar'>
               Hello World
             </Typography>
@@ -35,7 +38,7 @@ class App extends Component {
               <List>
               {['Buga','Boxes'].map((text,index)=>
                 <ListItem>
-                  <ListItemText>text</ListItemText>
+                  <ListItemText>{text}</ListItemText>
                 </ListItem>
               )}
               </List>

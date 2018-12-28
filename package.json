@@ -26,6 +26,12 @@
     "not ie <= 11",
     "not op_mini all"
   ],
+  "author": {
+    "name": "Swapneel Datta",
+    "email": "swd543@gmail.com",
+    "url": "https://github.com/swd543"
+  },
+  "proxy": "http://localhost:8080",
   "devDependencies": {
     "flow-bin": "^0.87.0"
   }
